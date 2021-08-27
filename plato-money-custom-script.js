@@ -1,4 +1,4 @@
-
+<script>
   // function for help center page
   // when user is on mobile and clicks on tabs
   // page will scroll to tabs content section
@@ -345,5 +345,5 @@ if (bodyClass.classList.contains("home-page-body")) {
   })
 
 }
-
+</script>
 
