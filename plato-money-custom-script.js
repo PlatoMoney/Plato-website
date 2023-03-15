@@ -142,38 +142,6 @@ if (bodyClass.classList.contains("home-page-body")) {
                       <span class="custom-option" data-value="Montenegro">Montenegro</span>
                       <span class="custom-option" data-value="North Macedonia">North Macedonia</span>
                       <span class="custom-option" data-value="Albania">Albania</span>
-                      <hr>
-                      <span class="custom-option" data-value="Austria">Austria</span>
-                      <span class="custom-option" data-value="Belgium">Belgium</span>
-                      <span class="custom-option" data-value="Bulgaria">Bulgaria</span>
-                      <span class="custom-option" data-value="Croatia">Croatia</span>
-                      <span class="custom-option" data-value="Cyprus">Cyprus</span>
-                      <span class="custom-option" data-value="Czech Republic">Czech Republic</span>
-                      <span class="custom-option" data-value="Denmark">Denmark</span>
-                      <span class="custom-option" data-value="Estonia">Estonia</span>
-                      <span class="custom-option" data-value="Finland">Finland</span>
-                      <span class="custom-option" data-value="France">France</span>
-                      <span class="custom-option" data-value="Germany">Germany</span>
-                      <span class="custom-option" data-value="Greece">Greece</span>
-                      <span class="custom-option" data-value="Hungary">Hungary</span>
-                      <span class="custom-option" data-value="Iceland">Iceland</span>
-                      <span class="custom-option" data-value="Ireland">Ireland</span>
-                      <span class="custom-option" data-value="Italy">Italy</span>
-                      <span class="custom-option" data-value="Latvia">Latvia</span>
-                      <span class="custom-option" data-value="Lichtenstein">Lichtenstein</span>
-                      <span class="custom-option" data-value="Lithuania">Lithuania</span>
-                      <span class="custom-option" data-value="Luxembourg">Luxembourg</span>
-                      <span class="custom-option" data-value="Malta">Malta</span>
-                      <span class="custom-option" data-value="The Netherlands">The Netherlands</span>
-                      <span class="custom-option" data-value="Norway">Norway</span>
-                      <span class="custom-option" data-value="Poland">Poland</span>
-                      <span class="custom-option" data-value="Portugal">Portugal</span>
-                      <span class="custom-option" data-value="Romania">Romania</span>
-                      <span class="custom-option" data-value="Slovenia">Slovenia</span>
-                      <span class="custom-option" data-value="Slovakia">Slovakia</span>
-                      <span class="custom-option" data-value="Spain">Spain</span>
-                      <span class="custom-option" data-value="Sweden">Sweden</span>
-                      <span class="custom-option" data-value="United Kingdom">United Kingdom</span>
                   </div>
               </div>
           </div>
