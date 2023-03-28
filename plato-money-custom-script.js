@@ -25,8 +25,8 @@ jQuery(document).ready(function ($) {
   
 });
   
- // code for Calculate Plato Fees
- $('#calculate-fees').on('click', ".custom-option", function(){
+  // code for Calculate Plato Fees
+  $('#calculate-fees').on('click', ".custom-option", function(){
      if (!this.classList.contains('selected')) {
             this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
             this.classList.add('selected');
@@ -46,10 +46,20 @@ jQuery(document).ready(function ($) {
 
   $('#calculate-fees').on('input', ".price-input", function(){
       var value = $('.price-input').val();
-      var fee = (value * 0.5) / 100;
-      fee = fee.toFixed(1);
-      var total = value - fee;
-      $('.total-amount-value').text(total);
+      if(value < 701){
+        var fee = 0;
+      } else if(value > 700 && value < 1201){
+        var fee = 2.95;
+      } else if(value > 1200 && value < 1701){
+        var fee =  4.95;
+      } else {
+        var fee = (value * 0.5) / 100;
+      }
+
+      fee = fee.toFixed(2);
+      var total = value + fee;
+	$('.fee-value').text(fee);
+     	$('.total-amount-value').text(total);
   });
 
   $('#calculate-fees').on('DOMSubtreeModified', ".currency-input .custom-select__trigger span", function(){
@@ -146,7 +156,7 @@ if (bodyClass.classList.contains("home-page-body")) {
               </div>
           </div>
 
-          <p>You send</p>
+          <p>Amount recipient will receive</p>
           <div class="send-value-wrapper">
               <input type="number" class="price-input">
               <div class="custom-select-wrapper currency-input">
@@ -164,11 +174,11 @@ if (bodyClass.classList.contains("home-page-body")) {
 
           <div class="transfer-fee">
               <div class="fee-icon"></div>
-              <p><span id="fee-currency"></span>0,5% Transfer Fee</p>
+              <p><span class="fee-value">0</span><span id="fee-currency"></span> Transfer Fee</p>
           </div>
 
           <div class="total-amount-container">
-              <p class="total-amount-heading">Recipient will get</p>
+              <p class="total-amount-heading">Amount you will send with fees</p>
               <div class="total-amount-wrapper">
                   <p class="total-amount-value">0</p><span id="total-amount-currency">€</span>
               </div>
@@ -238,7 +248,7 @@ if (bodyClass.classList.contains("home-page-body")) {
                 </div>
             </div>
 
-            <p>Iznos koji šaljete</p>
+            <p>Iznos koji će primalac primiti</p>
             <div class="send-value-wrapper">
                 <input type="number" class="price-input">
                 <div class="custom-select-wrapper currency-input">
@@ -256,11 +266,11 @@ if (bodyClass.classList.contains("home-page-body")) {
 
             <div class="transfer-fee">
                 <div class="fee-icon"></div>
-                <p><span id="fee-currency"></span>0,5% provizija za transfer</p>
+                <p><span class="fee-value">0</span><span id="fee-currency"></span> provizija za transfer</p>
             </div>
 
             <div class="total-amount-container">
-                <p class="total-amount-heading">Iznos koji primalac dobija</p>
+                <p class="total-amount-heading">Iznos koji ćete platiti sa uračunatom provizijom</p>
                 <div class="total-amount-wrapper">
                     <p class="total-amount-value">0</p><span id="total-amount-currency">€</span>
                 </div>
@@ -281,8 +291,3 @@ if (bodyClass.classList.contains("home-page-body")) {
   })
 
 }
-
-
-
-
-
