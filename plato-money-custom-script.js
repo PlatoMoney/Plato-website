@@ -16,14 +16,7 @@ jQuery(document).ready(function ($) {
   });
 });
   
-// this is grabbing the phone country code and phone number from input phone and inserting it in hidden input field
-jQuery(document).ready(function ($) {
-  input.on("change", function () {
-    input.intlTelInput("setNumber", input.val());
-    document.querySelector('#phoneOne').value = input.intlTelInput("getNumber");
-  });  
-  
-});
+
   
   // code for Calculate Plato Fees
   $('#calculate-fees').on('click', ".custom-option", function(){
