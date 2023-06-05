@@ -75,12 +75,12 @@ jQuery(document).ready(function ($) {
   //code for homepage calculator and homepage modal youtube video
 var bodyClass = document.querySelector("body"); 
 if (bodyClass.classList.contains("home-page-body")) {
-   console.log('home');
     var video = $(".w-iframe iframe").attr("src");
     
     // on modal close, we clear the video src to empty so it stops playing
     // and then put back the original video src
     $('#modal-overlay-close').click(function(){
+      $(".w-iframe iframe").get(0).stopVideo();
       $(".w-iframe iframe").attr("src","");
       $(".w-iframe iframe").attr("src",video);
     });
