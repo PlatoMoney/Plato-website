@@ -51,13 +51,13 @@ jQuery(document).ready(function ($) {
       } else if(value > 700 && value < 1201){
         var fee = 2.95;
       } else if(value > 1200 && value < 1701){
-        var fee =  4.95;
+        var fee = 4.95;
       } else {
         var fee = (value * 0.5) / 100;
       }
 
       fee = fee.toFixed(2);
-      var total = value + fee;
+      var total = number(value) + number(fee);
 	$('.fee-value').text(fee);
      	$('.total-amount-value').text(total);
   });
