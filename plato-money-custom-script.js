@@ -80,15 +80,10 @@ if (bodyClass.classList.contains("home-page-body")) {
     // on modal close, we clear the video src to empty so it stops playing
     // and then put back the original video src
     $('.home-page-body').on("click", '#modal-overlay-close', function(){
-      console.log('aaaaaaa');
       $(".w-iframe iframe").attr("src","");
       $(".w-iframe iframe").attr("src",video);
     })
-    $('#modal-overlay-close').click(function(){
-      console.log('sssss');
-      $(".w-iframe iframe").attr("src","");
-      $(".w-iframe iframe").attr("src",video);
-    });
+
     
     // on modal open we replace the url with autoplay, so it starts playing automaticly
     $('#youtube-modal-open').on('click',function(e){
