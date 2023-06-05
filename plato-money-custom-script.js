@@ -57,7 +57,7 @@ jQuery(document).ready(function ($) {
       }
 
       fee = fee.toFixed(2);
-      var total = number(value) + number(fee);
+      var total = Number(value) + Number(fee);
 	$('.fee-value').text(fee);
      	$('.total-amount-value').text(total);
   });
