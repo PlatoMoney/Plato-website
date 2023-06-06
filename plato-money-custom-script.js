@@ -47,7 +47,7 @@ if (bodyClass.classList.contains("home-page-body")) {
       document.getElementById("calculate-fees").innerHTML = `
       <div class="fees-calculator-wrapper">
           <p>Sender country</p>
-          <div class="custom-select-wrapper">
+          <div class="custom-select-wrapper sender-country-input">
               <div class="custom-select">
                   <div class="custom-select__trigger"><span>United Kingdom</span>
                       <div class="arrow"></div>
@@ -138,7 +138,7 @@ if (bodyClass.classList.contains("home-page-body")) {
     	document.getElementById("calculate-fees").innerHTML = `
          <div class="fees-calculator-wrapper">
             <p>Zemlja iz koje šaljete novac</p>
-            <div class="custom-select-wrapper">
+            <div class="custom-select-wrapper sender-country-input">
                 <div class="custom-select">
                     <div class="custom-select__trigger"><span>Velika Britanija</span>
                         <div class="arrow"></div>
@@ -202,12 +202,12 @@ if (bodyClass.classList.contains("home-page-body")) {
                 <div class="custom-select-wrapper currency-input">
                     <div class="custom-select">
                         <div class="custom-select__trigger"><span>EUR</span>
-                            <div class="arrow"></div>
+                            // <div class="arrow"></div>
                         </div>
-                        <div class="custom-options">
-                                <span class="custom-option selected" data-value="eur">EUR</span>
-                            <span class="custom-option" data-value="GBP">GBP</span>
-                        </div>
+                        // <div class="custom-options">
+                        //     <span class="custom-option selected" data-value="eur">EUR</span>
+                        //     <span class="custom-option" data-value="GBP">GBP</span>
+                        // </div>
                     </div>
                 </div>
             </div>
