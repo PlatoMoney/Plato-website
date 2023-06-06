@@ -109,7 +109,7 @@ if (bodyClass.classList.contains("home-page-body")) {
               <input type="number" class="price-input">
               <div class="custom-select-wrapper currency-input">
                   <div class="custom-select">
-                    <div class="custom-select__trigger"><span>EUR</span></div>
+                    <div class="custom-select__trigger"><span>GBP</span></div>
                     <!-- <div class="custom-select__trigger"><span>EUR</span>
                         <div class="arrow"></div>
                     </div>
@@ -202,7 +202,7 @@ if (bodyClass.classList.contains("home-page-body")) {
                 <input type="number" class="price-input">
                 <div class="custom-select-wrapper currency-input">
                     <div class="custom-select">
-                      <div class="custom-select__trigger"><span>EUR</span></div>
+                      <div class="custom-select__trigger"><span>GBP</span></div>
                       <!-- <div class="custom-select__trigger"><span>EUR</span>
                           <div class="arrow"></div>
                       </div>
