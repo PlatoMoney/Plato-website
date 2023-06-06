@@ -129,7 +129,7 @@ if (bodyClass.classList.contains("home-page-body")) {
           <div class="total-amount-container">
               <p class="total-amount-heading">Amount you will send with fees</p>
               <div class="total-amount-wrapper">
-                  <p class="total-amount-value">0</p><span id="total-amount-currency">€</span>
+                  <p class="total-amount-value">0</p><span id="total-amount-currency">£</span>
               </div>
           </div>
       </div>
@@ -222,7 +222,7 @@ if (bodyClass.classList.contains("home-page-body")) {
             <div class="total-amount-container">
                 <p class="total-amount-heading">Iznos koji ćete platiti sa uračunatom provizijom</p>
                 <div class="total-amount-wrapper">
-                    <p class="total-amount-value">0</p><span id="total-amount-currency">€</span>
+                    <p class="total-amount-value">0</p><span id="total-amount-currency">£</span>
                 </div>
             </div>
         </div>
