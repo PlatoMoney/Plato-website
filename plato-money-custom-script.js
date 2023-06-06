@@ -18,56 +18,6 @@ jQuery(document).ready(function ($) {
   
 
   
-  // code for Calculate Plato Fees
-  $('#calculate-fees').on('click', ".custom-option", function(){
-     if (!this.classList.contains('selected')) {
-            this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
-            this.classList.add('selected');
-            this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this.textContent;
-        }
-  }); 
-
-  $('#calculate-fees').on('click', ".custom-select-wrapper", function(){
-     this.querySelector('.custom-select').classList.toggle('open');
-  }); 
-
-  $('#calculate-fees').on('click', ".custom-select", function(e){
-     if (!this.contains(e.target)) {
-        this.classList.remove('open');
-      }
-  }); 
-
-  $('#calculate-fees').on('input', ".price-input", function(){
-      var value = $('.price-input').val();
-      if(value < 701){
-        var fee = 0;
-      } else if(value > 700 && value < 1201){
-        var fee = 2.95;
-      } else if(value > 1200 && value < 1701){
-        var fee = 4.95;
-      } else {
-        var fee = (value * 0.5) / 100;
-      }
-
-      fee = fee.toFixed(2);
-      var total = Number(value) + Number(fee);
-      if(value > 1700){
-        $('.fee-value').text('0.5%');
-      } else {
-        $('.fee-value').text(fee);
-      }
-	   
-     	$('.total-amount-value').text(total);
-  });
-
-  $('#calculate-fees').on('DOMSubtreeModified', ".currency-input .custom-select__trigger span", function(){
-    var curency = $('.currency-input .custom-select__trigger span').text();
-    if(curency == "GBP"){
-        $('#total-amount-currency').text("£");
-    } else if(curency == "EUR"){
-        $('#total-amount-currency').text("€");
-    }
-  });  
 
 
 
