@@ -201,13 +201,14 @@ if (bodyClass.classList.contains("home-page-body")) {
                 <input type="number" class="price-input">
                 <div class="custom-select-wrapper currency-input">
                     <div class="custom-select">
-                        <div class="custom-select__trigger"><span>EUR</span>
-                            // <div class="arrow"></div>
+                      <div class="custom-select__trigger"><span>EUR</span></div>
+                        <!-- <div class="custom-select__trigger"><span>EUR</span>
+                            <div class="arrow"></div>
                         </div>
-                        // <div class="custom-options">
-                        //     <span class="custom-option selected" data-value="eur">EUR</span>
-                        //     <span class="custom-option" data-value="GBP">GBP</span>
-                        // </div>
+                         <div class="custom-options">
+                            <span class="custom-option selected" data-value="eur">EUR</span>
+                            <span class="custom-option" data-value="GBP">GBP</span>
+                        </div> -->
                     </div>
                 </div>
             </div>
