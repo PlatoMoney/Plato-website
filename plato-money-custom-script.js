@@ -237,8 +237,16 @@ if (bodyClass.classList.contains("home-page-body")) {
   }
 
 
-  document.addEventListener("DOMContentLoaded", function() {
-   languageCheck()
-  });
+
+
+    if (document.readyState !== 'loading') {
+        // console.log('document is already ready, just execute code here');
+        languageCheck()
+    } else {
+        document.addEventListener('DOMContentLoaded', function () {
+            // console.log('document was not ready, place code here');
+            languageCheck()
+        });
+    }
 
 }
