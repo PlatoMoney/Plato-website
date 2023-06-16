@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
       $('.mobile-dropdown-text').text(div);
     }
   });
-});
+
   
 
   
@@ -238,9 +238,11 @@ if (bodyClass.classList.contains("home-page-body")) {
 
 
 
-	document.addEventListener('DOMContentLoaded', function () {
-		languageCheck()
-	});
+	// document.addEventListener('DOMContentLoaded', function () {
+	// 	languageCheck()
+	// });
+
+	languageCheck()
 
     // if (document.readyState !== 'loading') {
     //     // console.log('document is already ready, just execute code here');
@@ -253,3 +255,5 @@ if (bodyClass.classList.contains("home-page-body")) {
     // }
 
 }
+
+});
