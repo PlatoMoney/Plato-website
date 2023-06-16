@@ -12,6 +12,11 @@ jQuery(document).ready(function ($) {
       },
       800 //speed
       );
+
+      // this will show the text of the selected tab in the dropdown
+      var div = $(this).find('div');
+      div = div.text();
+      $('.mobile-dropdown-text').text(div);
     }
   });
 });
@@ -122,7 +127,7 @@ if (bodyClass.classList.contains("home-page-body")) {
           </div>
 
           <div class="transfer-fee">
-              <div class="fee-icon"></div>
+              <div class="fee-icon">+</div>
               <p><span class="fee-value">0</span><span id="fee-currency"></span> Transfer Fee</p>
           </div>
 
@@ -231,11 +236,9 @@ if (bodyClass.classList.contains("home-page-body")) {
     document.getElementById("youtube-modal-frame").innerHTML = `<div class="html-embed w-embed w-iframe"><iframe id="youtube-video" width="100%" height="100%" src=${video} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
   }
 
-  
+
   document.addEventListener("DOMContentLoaded", function() {
    languageCheck()
-	});
-
-
+  });
 
 }
