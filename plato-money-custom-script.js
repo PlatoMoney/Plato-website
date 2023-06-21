@@ -224,7 +224,7 @@ if (bodyClass.classList.contains("home-page-body")) {
             </div>
 
             <div class="transfer-fee">
-                <div class="fee-icon"></div>
+                <div class="fee-icon">+</div>
                 <p><span class="fee-value">0</span><span id="fee-currency"></span> provizija za transfer</p>
             </div>
 
