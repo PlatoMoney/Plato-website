@@ -1,5 +1,6 @@
 
 $( document ).ready(function() {
+	console.log('aaa');
   
   // function for help center page
   // when user is on mobile and clicks on tabs
