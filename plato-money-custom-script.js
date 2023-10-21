@@ -1,4 +1,19 @@
 jQuery(document).ready(function ($) {
+Weglot.initialize({
+    api_key: 'wg_63b34b464b6d466da0244d9f73d8b79e8'
+  });
+
+  Weglot.on('initialized', ()=>{
+    const currentLang = Weglot.getCurrentLang();
+    updateSW6FlagDropdownLinks(currentLang);
+  });
+  document.querySelectorAll('.wg-element-wrapper.sw6 [lang]').forEach((link)=>{
+      link.addEventListener('click', function(e){
+        e.preventDefault();     
+        Weglot.switchTo(this.getAttribute('lang'));
+        updateSW6FlagDropdownLinks(this.getAttribute('lang'));
+      });
+  });
    $('.tab').click(function(){
     var width = $(window).width();
   	if(width < 768) {
@@ -282,21 +297,7 @@ jQuery(document).ready(function ($) {
     }
 });
   
-  Weglot.initialize({
-    api_key: 'wg_63b34b464b6d466da0244d9f73d8b79e8'
-  });
 
-  Weglot.on('initialized', ()=>{
-    const currentLang = Weglot.getCurrentLang();
-    updateSW6FlagDropdownLinks(currentLang);
-  });
-  document.querySelectorAll('.wg-element-wrapper.sw6 [lang]').forEach((link)=>{
-      link.addEventListener('click', function(e){
-        e.preventDefault();     
-        Weglot.switchTo(this.getAttribute('lang'));
-        updateSW6FlagDropdownLinks(this.getAttribute('lang'));
-      });
-  });
   function updateSW6FlagDropdownLinks(currentLang){
     const $wrapper = document.querySelector('.wg-element-wrapper.sw6'); 
     if($wrapper.querySelector('.w-dropdown-toggle').getAttribute('lang') !== currentLang){
