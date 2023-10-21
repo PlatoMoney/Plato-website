@@ -28,6 +28,7 @@ Weglot.initialize({
       $('.mobile-dropdown-text').text(div);
     }
   });
+   setTimeout(function() { 
     var bodyClass = document.querySelector("body"); 
     if (bodyClass.classList.contains("home-page-body")) {
         Weglot.on("languageChanged", function() {
@@ -295,6 +296,7 @@ Weglot.initialize({
     }
         languageCheck()
     }
+	}, 1000);
 });
   
 
