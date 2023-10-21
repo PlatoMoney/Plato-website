@@ -1,5 +1,8 @@
+window.Webflow ||= [];
+window.Webflow.push(() =>{
+  console.log('aaa');
+});
 
-console.log('aaa');
 
 
 
